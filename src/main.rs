@@ -36,7 +36,7 @@ fn cpu_loop() -> ! {
 
 fn key(key: DecodedKey) {
     LAST_KEY.store(Some(key));
-}
+    }
 
 fn tick() {
     TICKED.store(true);
